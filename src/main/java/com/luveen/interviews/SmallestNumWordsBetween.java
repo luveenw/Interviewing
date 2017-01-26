@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
  * Created by luvee on 1/18/2017.
  *
  * Find the smallest number of words between two specified words in a string.
- * PlayStation PS Store Phone 2 1/18/2017
+ * @interview PlayStation PS Store Phone 2 1/18/2017
  */
 public class SmallestNumWordsBetween {
     public static void main(String[] args) {

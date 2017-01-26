@@ -3,7 +3,9 @@ package com.luveen.interviews;
 import java.util.EnumSet;
 
 /**
+ * Implement the state management for a game of Connect Four.
  *
+ * @interview Triplebyte
  */
 public class ConnectFour {
     /*enum SlotState {

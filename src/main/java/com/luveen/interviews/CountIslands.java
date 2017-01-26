@@ -6,7 +6,7 @@ import java.util.*;
  * Created by luvee on 1/20/2017.
  *
  * Count the number of islands in a 2d level represented as an array of 0s (water) and 1s (land).
- * Unity Onsite 1/11/2017
+ * @interview Unity Onsite 1/11/2017
  */
 public class CountIslands {
     private static final int[][] LEVEL_1 = new int[][] {

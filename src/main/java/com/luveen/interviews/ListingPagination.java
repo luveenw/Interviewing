@@ -8,6 +8,8 @@ import java.util.*;
 
 /**
  * Paginates a collection of Airbnb listings, ensuring a page does not repeat host IDs.
+ *
+ * @interview Airbnb Phone 1 11/07/2016
  */
 public class ListingPagination {
     private static final int PAGE_SIZE = 12;

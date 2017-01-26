@@ -6,17 +6,21 @@ package com.luveen.interviews;
  * Traverse a binary tree from its root in inorder fashion to verify that it is a binary search tree.
  */
 public class BinarySearchTreeValidation {
-    private static Node prev = null;
+    private Node prev = null;
 
-    private static boolean isBst(Node cur) {
+    public boolean isBst(Node cur) {
+        return isBst(cur, prev);
+    }
+
+    private boolean isBst(Node cur, Node prev) {
         if (cur != null) {
             if (!isBst(cur.left)) return false;
 
-            if (prev != null && prev.value > cur.value) {
+            if (this.prev != null && this.prev.value > cur.value) {
                 return false;
             }
 
-            prev = cur;
+            this.prev = cur;
             return isBst(cur.right);
         }
 
