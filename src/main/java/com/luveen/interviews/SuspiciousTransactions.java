@@ -48,7 +48,7 @@ public class SuspiciousTransactions {
 //            Map<String, Timestamp> tx = mostRecentTimestamps.get(ctx.accountId);
 //
 //            if (tx == null) {
-//                mostRecentTimestamps.put(ctx.accountId, new Map.Entry<>(ctx.geo, ctx.utcTimestamp));
+//                mostRecentTimestamps.get(ctx.accountId).put(ctx.geo, ctx.utcTimestamp);
 //            }
 //            else {
 //                if (tx.containsKey(ctx.geo)) {
