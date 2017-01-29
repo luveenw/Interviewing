@@ -1,4 +1,4 @@
-package com.luveen.interviews;
+package com.interviews.luveen;
 
 /**
  * Created by luvee on 1/20/2017.

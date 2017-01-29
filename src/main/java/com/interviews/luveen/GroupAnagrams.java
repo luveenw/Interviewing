@@ -1,4 +1,4 @@
-package com.luveen.interviews;
+package com.interviews.luveen;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ListMultimap;

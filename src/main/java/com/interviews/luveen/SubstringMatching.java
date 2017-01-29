@@ -1,4 +1,4 @@
-package com.luveen.interviews;
+package com.interviews.luveen;
 
 /**
  * Determine whether a supplied regex pattern would match a supplied string.

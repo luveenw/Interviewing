@@ -1,4 +1,4 @@
-package com.luveen.interviews;
+package com.interviews.luveen;
 
 import com.google.common.base.Preconditions;
 

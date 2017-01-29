@@ -1,4 +1,4 @@
-package com.luveen.interviews;
+package com.interviews.luveen;
 
 /**
  * Created by Luveen Wadhwani on 11/10/2016.
