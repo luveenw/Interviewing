@@ -12,7 +12,7 @@ import java.util.*;
  * @interview Airbnb Phone 1 11/07/2016
  */
 public class ListingPagination {
-    private static final int PAGE_SIZE = 12;
+    private static final int PAGE_SIZE = 5;
 
     // 14 listings; some repeated host ids in page 1
     private static final List<String> LISTINGS_1 = Lists.newArrayList(
@@ -65,7 +65,8 @@ public class ListingPagination {
 
     public static void main(String[] args) {
         System.out.println("Listings 1...");
-        print(paginate(toListings(LISTINGS_1)));
+        foo(toListings(LISTINGS_1));
+        print(paginate2(toListings(LISTINGS_1)));
         System.out.println();
 //        System.out.println("Listings 2...");
 //        print(paginate(toListings(LISTINGS_2)));
@@ -75,7 +76,7 @@ public class ListingPagination {
 //        System.out.println();
     }
 
-    private static List<Listing> paginate(List<Listing> listings) {
+    private static List<Listing> _WRONG_paginate_WRONG_(List<Listing> listings) {
         int numPages = (int) Math.ceil((double)(listings.size()) / (double)(PAGE_SIZE));
 
         List<Listing> leftoverListings = new ArrayList<>();
@@ -104,7 +105,7 @@ public class ListingPagination {
             }
 
             // If we haven't yet filled a page, use listings from the input list
-            if (pageIndex < PAGE_SIZE - 1) {
+            if (pageIndex < PAGE_SIZE) {
                 Listing l = listings.get(listIndex);
 
                 if (!pageHostIds.contains(l.hostId)) {
@@ -137,6 +138,78 @@ public class ListingPagination {
         for (; listIndex <= listings.size() - 1; listIndex++) {
             result.add(listings.get(listIndex));
         }
+
+        return result;
+    }
+
+    private static List<Listing> paginate2(List<Listing> listings) {
+        int numPages = (int) Math.ceil((double)(listings.size()) / (double)(PAGE_SIZE));
+
+        List<Listing> leftoverListings = new ArrayList<>();
+        List<Listing> result = new ArrayList<>();
+        Set<Integer> pageHostIds = new HashSet<>();
+        int pageIndex = 0;
+        int listIndex = 0;
+        boolean isUsedLeftoversThisPage = false;
+
+        // Fill everything but the last page - we will handle the last page separately since it is a special snowflake
+        while (listIndex < ((numPages - 1) * PAGE_SIZE) ) {
+
+            // Use any previously encountered listings that needed to be saved for later, if possible
+            if (!isUsedLeftoversThisPage && !leftoverListings.isEmpty()) {
+                for (int i = 0; i < leftoverListings.size() && pageIndex < PAGE_SIZE; i++) {
+                    Listing leftover = leftoverListings.get(i);
+
+                    if (!pageHostIds.contains(leftover.hostId)) {
+                        result.add(leftover);
+                        leftoverListings.remove(leftover);
+                        pageIndex++;
+                    }
+                }
+
+                isUsedLeftoversThisPage = true;
+            }
+
+            // If we haven't yet filled a page, use listings from the input list
+            if (pageIndex < PAGE_SIZE) {
+                Listing l = listings.get(listIndex);
+
+                if (!pageHostIds.contains(l.hostId)) {
+                    result.add(l);
+                    pageHostIds.add(l.hostId);
+                    pageIndex++;
+                } else {
+                    leftoverListings.add(l);
+                }
+
+                listIndex++;
+            }
+
+            // If we managed to fill a page, reset page management state
+            if (pageIndex == PAGE_SIZE) {
+                pageIndex = 0;
+                pageHostIds.clear();
+                isUsedLeftoversThisPage = false;
+            }
+        }
+
+        // We've reached the last page. Here, we:
+        // 1. Use any leftover listings
+        // 2. Use the rest of the input list
+
+        if (!leftoverListings.isEmpty()) {
+            result.addAll(leftoverListings);
+        }
+
+        for (; listIndex <= listings.size() - 1; listIndex++) {
+            result.add(listings.get(listIndex));
+        }
+
+        return result;
+    }
+
+    private static String[] foo(List<Listing> listings) {
+        String[] result = listings.stream().map(Listing::toString).toArray(String[]::new);
 
         return result;
     }
