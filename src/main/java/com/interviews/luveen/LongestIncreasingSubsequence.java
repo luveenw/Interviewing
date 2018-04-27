@@ -4,7 +4,6 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,8 +13,13 @@ public class LongestIncreasingSubsequence {
         List<Integer> lisQuad = findLISQuadraticIn(example1);
         List<Integer> lisLog = findLISLogIn(example1);
 
-        System.out.println(lisQuad.stream().map(Object::toString).collect(Collectors.joining(", ")));
-        System.out.println(lisLog.stream().map(Object::toString).collect(Collectors.joining(", ")));
+        System.out.println(String.format(
+                "Quadratic time algorithm LIS: %s",
+                lisQuad.stream().map(Object::toString).collect(Collectors.joining(", "))));
+
+        System.out.println(String.format(
+                "O(nlogn) time algorithm LIS: %s",
+                lisLog.stream().map(Object::toString).collect(Collectors.joining(", "))));
     }
 
     public static List<Integer> findLISQuadraticIn(List<Integer> a) {
@@ -29,20 +33,21 @@ public class LongestIncreasingSubsequence {
 
         // the LIS of a ending at index 0 consists of the element
         // in a at index 0
-        L.add(0, Lists.newArrayList(a.get(0)));
+        L.get(0).add(a.get(0));
 
         for (int i = 1; i < size; i++) {
+            int num = a.get(i);
+
             for (int j = 0; j < i; j++) {
-                if (a.get(j) < a.get(i) &&
-                        L.get(i).size() < L.get(j).size() + 1) {
-                    L.get(i).addAll(L.get(j));
+                if (a.get(j) < num && L.get(i).size() < L.get(j).size() + 1) {
+                    L.set(i, new ArrayList<>(L.get(j)));
                 }
             }
 
-            L.get(i).add(L.get(i).size() - 1, a.get(i));
+            L.get(i).add(num);
         }
 
-        return L.stream().max(Comparator.comparing(List::size)).get();
+        return L.get(size - 1);
     }
 
     private static int findCeilIndex(List<Integer> a, int[] tail, int l, int r, int key) {
@@ -53,7 +58,7 @@ public class LongestIncreasingSubsequence {
         while (start <= end) {
             mid = (end + start) / 2;
 
-            if (mid < end && a.get(tail[mid]) <= key && a.get(tail[mid + 1]) >= key) {
+            if (mid < r && a.get(tail[mid]) < key && a.get(tail[mid + 1]) >= key) {
                 mid++;
                 break;
             } else if (a.get(tail[mid]) < key) {
@@ -66,6 +71,17 @@ public class LongestIncreasingSubsequence {
         return mid;
     }
 
+    /**
+     * Patience sorting algorithm. For each number, if it is
+     * 1. bigger than the last element of the LIS so far, add it to the end of the LIS
+     * 2. smaller than the first element of the LIS so far, set it as the start of the LIS
+     * 3. in between, binary search for the LIS index where it fits correctly between two numbers so the LIS condition
+     * is maintained, and set that index in the LIS as this number
+     *
+     * Maintain 2 arrays:
+     * 1. for each of its indices, tail holds the corresponding array index of the last element in the LIS ending at that index
+     * 2. for each of its indices, previous holds the corresponding array index for the preceding element of the LIS
+     */
     public static List<Integer> findLISLogIn(List<Integer> a) {
         int size = a.size();
         int[] tail = new int[size];
@@ -86,7 +102,7 @@ public class LongestIncreasingSubsequence {
             } else if (num < a.get(tail[0])) {
                 tail[0] = i;
             } else {
-                int index = findCeilIndex(a, tail, 0, size - 1, num);
+                int index = findCeilIndex(a, tail, 0, resultLength, num);
                 Preconditions.checkArgument(index != -1);
                 tail[index] = i;
                 previous[tail[index]] = tail[index - 1];
