@@ -11,12 +11,14 @@ import java.util.Stack;
 public class MazeGeneration {
     public void randomizedDfs(int numRows, int numCols) {
         boolean[][] visited = new boolean[numRows][numCols];
+        // 3d array specifies whether a direction is open to move to
         boolean[][][] maze = new boolean [numRows][numCols][4];
 
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < numCols; j++) {
                 visited[i][j] = false;
 
+                // all movement is initially impossible - we will open up some spots via randomized dfs
                 for (int k = 0; k < 4; k++) {
                     maze[i][j][k] = false;
                 }
