@@ -1,7 +1,7 @@
 package com.interviews.luveen;
 
 /**
- * @interview Color Phone Screen 5/10/2018
+ * @interview Color Phone Screen 1 5/10/2018
  */
 public class MinHops {
     public static void main (String[] args) {

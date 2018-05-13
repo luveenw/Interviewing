@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f50d4e42-e81c-47ec-a20c-65fd56a1f8c9" name="Default" comment="Color phone screen; misc practice">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MergeConflictingMeetings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MinHops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/SprinkleCommas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/SudokuChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f50d4e42-e81c-47ec-a20c-65fd56a1f8c9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/ConnectedComponents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/DirectoryStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MakingChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MatrixDiagonals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2016.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/LongestCommonSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MazeGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MazeGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MinHops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MinHops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutationsCombinations.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,18 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Factorial.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/Factorial.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NumberToEnglish.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/NumberToEnglish.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,13 +38,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringPermutations.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutations.java">
+      <file leaf-file-name="StringPermutationsCombinations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutationsCombinations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="640">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectedComponents.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/ConnectedComponents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectoryStructure.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/DirectoryStructure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3827#3828#0" expanded="true" />
+                <element signature="e#3892#3893#0" expanded="true" />
+                <element signature="e#3947#3948#0" expanded="true" />
+                <element signature="e#4013#4014#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+                <element signature="e#996#997#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="e#2159#2160#0" expanded="true" />
+                <element signature="e#2224#2225#0" expanded="true" />
+                <element signature="e#2255#2256#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +89,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MinHops.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakingChange.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MakingChange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatrixDiagonals.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MatrixDiagonals.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -78,7 +115,7 @@
       <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Class.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="37504">
               <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
             </state>
           </provider>
@@ -87,38 +124,8 @@
       <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
+            <state relative-caret-position="47792">
               <caret line="3106" selection-start-line="3106" selection-end-line="3106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SudokuChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/SudokuChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeConflictingMeetings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MergeConflictingMeetings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongestIncreasingSubsequence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/LongestIncreasingSubsequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -137,6 +144,7 @@
       <find>@interview</find>
       <find>]</find>
       <find>@interview</find>
+      <find>n</find>
     </findStrings>
     <replaceStrings>
       <replace>}</replace>
@@ -153,8 +161,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/Factorial.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/SudokuChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MergeConflictingMeetings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MatrixDiagonals.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MinHops.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/MakingChange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutationsCombinations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/ConnectedComponents.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/interviews/luveen/DirectoryStructure.java" />
       </list>
     </option>
   </component>
@@ -165,10 +178,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="782" />
+    <option name="x" value="781" />
     <option name="y" value="231" />
-    <option name="width" value="2261" />
-    <option name="height" value="1619" />
+    <option name="width" value="2262" />
+    <option name="height" value="1621" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -177,7 +190,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,7 +245,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -247,9 +263,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MinHops">
-    <configuration name="MergeConflictingMeetings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.MergeConflictingMeetings" />
+  <component name="RunManager" selected="Application.DirectoryStructure">
+    <configuration name="ConnectedComponents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.ConnectedComponents" />
+      <module name="2016" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviews.luveen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="DirectoryStructure" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.DirectoryStructure" />
+      <module name="2016" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviews.luveen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="MatrixDiagonals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.MatrixDiagonals" />
       <module name="2016" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -270,30 +308,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="NumberToEnglish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.NumberToEnglish" />
-      <module name="2016" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interviews.luveen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="StringPermutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.StringPermutations" />
-      <module name="2016" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interviews.luveen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="SudokuChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.SudokuChecker" />
+    <configuration name="StringPermutationsCombinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviews.luveen.StringPermutationsCombinations" />
       <module name="2016" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -345,19 +361,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.SudokuChecker" />
-      <item itemvalue="Application.MergeConflictingMeetings" />
-      <item itemvalue="Application.NumberToEnglish" />
-      <item itemvalue="Application.StringPermutations" />
+      <item itemvalue="Application.StringPermutationsCombinations" />
       <item itemvalue="Application.MinHops" />
+      <item itemvalue="Application.MatrixDiagonals" />
+      <item itemvalue="Application.ConnectedComponents" />
+      <item itemvalue="Application.DirectoryStructure" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DirectoryStructure" />
+        <item itemvalue="Application.ConnectedComponents" />
+        <item itemvalue="Application.StringPermutationsCombinations" />
+        <item itemvalue="Application.MatrixDiagonals" />
         <item itemvalue="Application.MinHops" />
-        <item itemvalue="Application.StringPermutations" />
-        <item itemvalue="Application.NumberToEnglish" />
-        <item itemvalue="Application.MergeConflictingMeetings" />
-        <item itemvalue="Application.SudokuChecker" />
       </list>
     </recent_temporary>
   </component>
@@ -369,6 +385,14 @@
       <option name="presentableId" value="Default" />
       <updated>1524962588814</updated>
     </task>
+    <task id="LOCAL-00001" summary="Color phone screen; misc practice">
+      <created>1525985521106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525985521106</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -384,26 +408,26 @@
     <frame x="-7" y="-7" width="2407" height="1330" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3293718" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293718" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3293718" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297827" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2580645" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19694397" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25820196" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26033235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32597622" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32597622" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24968044" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -441,7 +465,7 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutations.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutationsCombinations.java</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="8" />
@@ -458,11 +482,17 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/DirectoryStructure.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -475,13 +505,45 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MakingChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MatrixDiagonals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38928">
+          <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49696">
+          <caret line="3106" selection-start-line="3106" selection-end-line="3106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/ConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1792">
+          <caret line="112" column="38" lean-forward="true" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MazeGeneration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,9 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,9 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,9 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,9 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,9 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/Factorial.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="64">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -800,31 +841,76 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
+        <state relative-caret-position="47792">
           <caret line="3106" selection-start-line="3106" selection-end-line="3106" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="37504">
           <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MatrixDiagonals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MinHops.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutations.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/MakingChange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="128">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/StringPermutationsCombinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/ConnectedComponents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/interviews/luveen/DirectoryStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="126" column="5" lean-forward="true" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3827#3828#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#4013#4014#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2159#2160#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#2255#2256#0" expanded="true" />
           </folding>
         </state>
       </provider>

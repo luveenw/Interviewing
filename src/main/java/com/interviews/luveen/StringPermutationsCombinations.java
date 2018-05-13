@@ -5,19 +5,24 @@ import com.google.common.collect.Lists;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StringPermutations {
+public class StringPermutationsCombinations {
     public static void main(String[] args) {
-//        Lists.newArrayList("abcd").forEach(System.out::println);
+//        List<String> permutations = permute("abcd");
+//        printList(permutations);
 
-        List<String> result = permute("abcd");
+        List<String> combinations = combine("abcd");
+        printList(combinations);
+    }
+
+    private static void printList(List<String> list) {
         int i = 0;
 
-        for (String p : result) {
+        for (String p : list) {
             System.out.println(String.format("String %d: %s", ++i, p));
         }
     }
 
-    private static List<String> permute(String s) {
+    static List<String> permute(String s) {
         if (s.length() == 1) {
             return Lists.newArrayList(s);
         }
@@ -33,6 +38,25 @@ public class StringPermutations {
 
                 result.add(substring + substring1 + substring2);
             }
+        }
+
+        return result;
+    }
+
+    static List<String> combine(String s) {
+        if (s.length() == 1) {
+            return Lists.newArrayList(s);
+        }
+
+        List<String> temp = combine(s.substring(1));
+        List<String> result = new ArrayList<>();
+        String substring = s.substring(0, 1);
+
+        result.add(substring);
+        result.addAll(temp);
+
+        for (String t : temp) {
+                result.add(substring + t);
         }
 
         return result;
