@@ -10,16 +10,22 @@ import java.util.stream.Collectors;
 public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         List<Integer> example1 = Lists.newArrayList(3, 4, -1, 5, 8, 2, 3, 12, 7, 9, 10);
-        List<Integer> lisQuad = findLISQuadraticIn(example1);
-        List<Integer> lisLog = findLISLogIn(example1);
+        List<Integer> example2 = Lists.newArrayList(2, 3, 4, 5, 1);
+//        List<Integer> lisQuad = findLISQuadraticIn(example1);
+//        List<Integer> lisLog = findLISLogIn(example1);
+        List<Integer> lisLog2 = findLISLogIn(example2);
 
-        System.out.println(String.format(
-                "Quadratic time algorithm LIS: %s",
+        /*System.out.println(String.format(
+                "Quadratic time algorithm LIS (example1): %s",
                 lisQuad.stream().map(Object::toString).collect(Collectors.joining(", "))));
 
         System.out.println(String.format(
-                "O(nlogn) time algorithm LIS: %s",
-                lisLog.stream().map(Object::toString).collect(Collectors.joining(", "))));
+                "O(nlogn) time algorithm LIS (example1): %s",
+                lisLog.stream().map(Object::toString).collect(Collectors.joining(", "))));*/
+
+        System.out.println(String.format(
+                "O(nlogn) time algorithm LIS (example2): %s",
+                lisLog2.stream().map(Object::toString).collect(Collectors.joining(", "))));
     }
 
     public static List<Integer> findLISQuadraticIn(List<Integer> a) {
