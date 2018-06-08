@@ -4,6 +4,7 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -95,10 +96,7 @@ public class LongestIncreasingSubsequence {
         int resultLength = 0;
 
         tail[0] = 0;
-
-        for (int i = 0; i < size; i++) {
-            previous[i] = -1;
-        }
+        Arrays.fill(previous, -1);
 
         for (int i = 1; i < size; i++) {
             int num = a.get(i);

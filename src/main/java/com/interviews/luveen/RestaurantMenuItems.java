@@ -1,6 +1,6 @@
 package com.interviews.luveen;
 
-import com.google.common.collect.Lists;
+//import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -50,14 +50,15 @@ public class RestaurantMenuItems {
         if (temp == 0) {
             List<List<Integer>> result = new ArrayList<>();
 
-            result.add(Lists.newArrayList(items[index]));
+//            result.add(Lists.newArrayList(items[index]));
+            result.add(new ArrayList<>(items[index]));
 
             return result;
         }
 
         List<List<Integer>> withItem = findItemsWithValue1(items, temp, index + 1);
         List<List<Integer>> withoutItem = findItemsWithValue1(items, total, index + 1);
-        List<List<Integer>> result = Lists.newArrayList();
+        List<List<Integer>> result = new ArrayList<>();
 
         result.addAll(withItem
                 .stream()
