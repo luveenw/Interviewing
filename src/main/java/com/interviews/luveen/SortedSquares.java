@@ -101,13 +101,15 @@ public class SortedSquares {
     }
 
     private long[] reverseSquare(int[] a, int start, int end) {
-        Preconditions.checkArgument(start <= end);
+        return reverse(square(a, start, end));
+    }
 
-        int length = end - start + 1;
-        long[] result = new long[length];
+    private long[] reverse(long[] a) {
+        int len = a.length;
+        long[] result = new long[len];
 
-        for (int i = start, k = length - 1; i <= end; i++, k--) {
-            result[k] = a[i] * a[i];
+        for (int i = 0, k = len - 1; i < len && k >= 0; i++, k--) {
+            result[i] = a[k];
         }
 
         return result;

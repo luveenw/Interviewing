@@ -63,7 +63,7 @@ public class LongestIncreasingSubsequence {
         int mid = -1;
 
         while (start <= end) {
-            mid = (end + start) / 2;
+            mid = start + (end - start) / 2;
 
             if (mid < r && a.get(tail[mid]) < key && a.get(tail[mid + 1]) >= key) {
                 mid++;

@@ -32,11 +32,11 @@ public class StringPermutationsCombinations {
 
         for (String t : temp) {
             for (int i = 0; i <= t.length(); i++) {
-                String substring = t.substring(0, i);
-                String substring1 = s.substring(0, 1);
-                String substring2 = t.substring(i);
-
-                result.add(substring + substring1 + substring2);
+                result.add(new StringBuilder()
+                .append(t, 0, i)
+                .append(s, 0, 1)
+                .append(t.substring(i))
+                .toString());
             }
         }
 
@@ -55,9 +55,9 @@ public class StringPermutationsCombinations {
         result.add(substring);
         result.addAll(temp);
 
-        for (String t : temp) {
-                result.add(substring + t);
-        }
+        temp.stream()
+                .map(t -> substring + t)
+                .forEach(result::add);
 
         return result;
     }

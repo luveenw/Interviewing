@@ -2,6 +2,10 @@ package com.interviews.luveen;
 
 import com.google.common.base.Preconditions;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * Created by luvee on 1/25/2017.
  *
@@ -9,11 +13,34 @@ import com.google.common.base.Preconditions;
  */
 public class LongestCommonSubsequence {
     public static void main(String[] args) {
-        System.out.println(lcs("abcdaf", "acbcf"));
-        System.out.println(lcs("acbcf", "abcdaf"));
-        System.out.println(lcs("abcd", "aebd"));
-        System.out.println(lcs("abcd", ""));
-        System.out.println(lcs("", "abcd"));
+        System.out.println("All subsequences of abc...");
+        allSubsequencesOf("abc").forEach(System.out::println);
+//        System.out.println("All subsequences of abcdaf...");
+//        allSubsequencesOf("abcdaf").forEach(System.out::println);
+//        System.out.println("All subsequences of acbcf...");
+//        allSubsequencesOf("acbcf").forEach(System.out::println);
+
+//        System.out.println(lcs("abcdaf", "acbcf"));
+//        System.out.println(lcs("acbcf", "abcdaf"));
+//        System.out.println(lcs("abcd", "aebd"));
+//        System.out.println(lcs("abcd", ""));
+//        System.out.println(lcs("", "abcd"));
+    }
+
+    private static List<String> allSubsequencesOf(String s) {
+        if (s == null || s.isEmpty()) {
+            return new ArrayList<>();
+        }
+
+        List<String> result = new ArrayList<>();
+        String c = s.substring(0, 1);
+        List<String> subsequences = allSubsequencesOf(s.substring(1));
+
+        result.add(c);
+        result.addAll(subsequences);
+        result.addAll(subsequences.stream().map(str -> c + str).collect(Collectors.toList()));
+
+        return result;
     }
 
     private static String lcs(String a, String b) {
